@@ -1,0 +1,528 @@
+@font-face {
+  font-family: "NunitoSans-SemiBold";
+  src: url(./fonts/NunitoSans/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "NunitoSans-ExtraBold";
+  src: url(./fonts/NunitoSans/NunitoSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url(./fonts/NunitoSans/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "NunitoSans-Light";
+  src: url(./fonts/NunitoSans/NunitoSans-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-style: normal;
+}
+
+header {
+  height: 88px;
+  background-image: url("./images/eMbargo·net.svg"), url("./images/header.png");
+  background-size: 242px 50px, cover;
+  background-position: center center, center top;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic-light-left {
+  position: absolute;
+  top: 0;
+}
+
+.pic-light-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 20px;
+  left: 20%;
+}
+
+.number {
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.link {
+  position: absolute;
+  top: 20px;
+  right: 25%;
+}
+
+.tel-mobile {
+  display: none;
+}
+
+main {
+  background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgb(197, 197, 197) 8.33%,
+      rgba(49, 49, 49, 0.5) 78.65%
+    ),
+    url("./images/map.png"), url("./images/bg.png");
+  background-position: center top, center top, center top;
+  background-size: auto, contain, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.map {
+  padding-bottom: 520px;
+}
+
+h1 {
+  padding-top: 76px;
+  font-family: "NunitoSans-ExtraBold", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h3 {
+  margin-top: 10px;
+  font-family: "NunitoSans-Light", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "NunitoSans-ExtraBold", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.description {
+  margin-top: 80px;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.frame {
+  margin-bottom: 100px;
+  padding-right: 20px;
+  width: 294px;
+  height: 88px;
+}
+
+.teaser {
+  margin-right: 32px;
+}
+
+.images {
+  margin-bottom: 44px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.img-wrap {
+  display: none;
+}
+
+.pic-1 {
+  width: 30%;
+  position: absolute;
+  top: -300px;
+  right: 0px;
+}
+
+.pic-2 {
+  width: 30%;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+
+.requared {
+  margin-top: 120px;
+  margin-bottom: 44px;
+  font-family: "NunitoSans-ExtraBold", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #0e0e0e;
+}
+
+.call {
+  margin-bottom: 16px;
+  font-family: "NunitoSans-Light", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.number-block {
+  margin-bottom: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+.number-black {
+  margin-left: 20px;
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #0e0e0e;
+}
+
+.button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.button-dark {
+  background: #0e0e0e;
+  border-radius: 2px;
+  padding: 8px 20px;
+  width: 225px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button-dark-text {
+  margin-left: 16px;
+  font-family: "NunitoSans-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.pic-3 {
+  width: 30%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.pic-4 {
+  width: 30%;
+  position: absolute;
+  top: 300px;
+  left: 0px;
+}
+
+.facilities {
+  margin-top: 80px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.facilities div {
+  margin-right: 32px;
+}
+
+.facilities p {
+  width: 260px;
+  margin-bottom: 80px;
+}
+
+.pic-5 {
+  position: relative;
+  width: 60%;
+}
+
+.pic-6 {
+  width: 45%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.call-white {
+  margin-top: 200px;
+  margin-bottom: 16px;
+  font-family: "NunitoSans-Light", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.number-white {
+  margin-left: 12px;
+  font-family: "NunitoSans-SemiBold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.button-yallow {
+  background: #f2c94c;
+  border-radius: 2px;
+  padding: 8px 20px;
+  width: 225px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button-white-text {
+  margin-left: 16px;
+  font-family: "NunitoSans-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #0e0e0e;
+}
+
+.footer {
+  margin-top: 200px;
+  padding-bottom: 24px;
+  font-family: "NunitoSans-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    background-size: 142px 40px, cover;
+    background-position: center top, center top;
+  }
+
+  .tel {
+    display: none;
+  }
+
+  .link {
+    top: 35px;
+    right: 44%;
+  }
+
+  .tel-mobile {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    background-position: center top, center 100px, center top;
+  }
+
+  h1 {
+    padding-top: 40px;
+
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .map {
+    padding-bottom: 300px;
+  }
+
+  .pic-3 {
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .description {
+    margin-top: 32px;
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(232, 232, 232) 8.33%,
+        rgba(75, 75, 75, 0.5) 78.65%
+      ),
+      url("./images/map.png"), url("./images/bg.png");
+    background-position: center top, center 150px, center top;
+  }
+
+  .map {
+    padding-bottom: 280px;
+  }
+
+  .pic-light-left {
+    position: absolute;
+    top: 0;
+  }
+
+  .pic-light-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .link {
+    right: 35%;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .description {
+    margin-top: 35px;
+    margin-left: 30%;
+  }
+
+  .frame {
+    margin-bottom: 20px;
+  }
+
+  .pic-1 {
+    top: 0px;
+    right: 40px;
+    width: 60%;
+  }
+
+  .pic-2 {
+    top: 0px;
+    left: 40px;
+    width: 60%;
+  }
+
+  .requared {
+    margin-top: 240px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .call {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .number-block {
+    margin-bottom: 38px;
+  }
+
+  .number-black {
+    font-size: 32px;
+  }
+
+  .pic-3 {
+    top: 0px;
+    right: 90px;
+    width: 50%;
+  }
+
+  .pic-4 {
+    top: 80px;
+    left: 90px;
+    width: 50%;
+  }
+
+  .facilities {
+    margin-top: 32px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+  }
+
+  .facilities div {
+    margin-right: 24px;
+  }
+
+  .facilities p {
+    width: 125px;
+    margin-bottom: 20px;
+  }
+
+  .desctop {
+    display: none;
+  }
+
+  .img-wrap {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+  }
+
+  .pic-5 {
+    position: initial;
+    margin-left: -140px;
+    min-height: 200px;
+    width: 150%;
+  }
+
+  .pic-6 {
+    position: initial;
+    margin-top: -60px;
+    margin-left: -60px;
+    min-height: 200px;
+    width: 120%;
+  }
+
+  .call-white {
+    margin-top: 80px;
+    margin-bottom: 14px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .number-white {
+    font-size: 32px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+}
