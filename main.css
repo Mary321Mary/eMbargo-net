@@ -26,13 +26,20 @@
 }
 
 header {
-  height: 88px;
   background-image: url("./images/eMbargo·net.svg"), url("./images/header.png");
   background-size: 242px 50px, cover;
   background-position: center center, center top;
   background-repeat: no-repeat, no-repeat;
   display: flex;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 88px;
+  width: 100%;
+
+  z-index: 2;
 }
 
 .pic-light-left {
@@ -59,7 +66,7 @@ header {
   left: 20%;
 }
 
-.number {
+.tel p {
   font-family: "NunitoSans-SemiBold", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -77,24 +84,26 @@ header {
   display: none;
 }
 
-main {
+body {
   background-image: radial-gradient(
       50% 50% at 50% 50%,
       rgb(197, 197, 197) 8.33%,
-      rgba(49, 49, 49, 0.5) 78.65%
+      rgba(15, 15, 15, 0.5) 78.65%
     ),
     url("./images/map.png"), url("./images/bg.png");
-  background-position: center top, center top, center top;
+  background-position: center top, center 168px, center top;
   background-size: auto, contain, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .map {
+  padding-left: 5px;
+  padding-right: 5px;
   padding-bottom: 520px;
 }
 
 h1 {
-  padding-top: 76px;
+  padding-top: 154px;
   font-family: "NunitoSans-ExtraBold", sans-serif;
   font-weight: 800;
   font-size: 80px;
@@ -344,12 +353,12 @@ h2 {
 }
 
 @media only screen and (max-width: 900px) {
-  main {
+  body {
     background-position: center top, center 100px, center top;
   }
 
   h1 {
-    padding-top: 40px;
+    padding-top: 128px;
 
     font-size: 40px;
     line-height: 44px;
@@ -377,18 +386,14 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-  main {
-    background-image: radial-gradient(
-        50% 50% at 50% 50%,
-        rgb(232, 232, 232) 8.33%,
-        rgba(75, 75, 75, 0.5) 78.65%
-      ),
-      url("./images/map.png"), url("./images/bg.png");
-    background-position: center top, center 150px, center top;
-  }
-
-  .map {
-    padding-bottom: 280px;
+  header {
+    background-image: url("./images/eMbargo·net.svg"),
+      url("./images/header-mobile.png");
+    background-size: auto 30px, 100% 88px;
+    background-position: center top, center top;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    justify-content: space-between;
   }
 
   .pic-light-left {
@@ -407,7 +412,26 @@ h2 {
   }
 
   .link {
-    right: 35%;
+    top: 30px;
+    right: 40%;
+  }
+
+  .link img {
+    height: 25px;
+  }
+
+  body {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(232, 232, 232) 8.33%,
+        rgba(50, 50, 50, 0.5) 78.65%
+      ),
+      url("./images/map.png"), url("./images/bg.png");
+    background-position: center top, center 200px, center top;
+  }
+
+  .map {
+    padding-bottom: 280px;
   }
 
   h2 {
@@ -485,11 +509,12 @@ h2 {
     margin-bottom: 20px;
   }
 
-  .desctop {
+  .desktop {
     display: none;
   }
 
   .img-wrap {
+    display: block;
     width: 100%;
     height: 700px;
     overflow: hidden;
